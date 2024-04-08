@@ -1,0 +1,27 @@
+{
+	"geode": "2.0.0-beta.23",
+	"gd": {
+		"win": "2.204",
+		"android": "2.205"
+	},
+	"version": "v1.0.0",
+	"id": "shineua.pause_countdown",
+	"name": "Pause Countdown",
+	"developer": "ShineUA",
+	"description": "This mod adds countdown on level resume.",
+	"settings": {
+		"title": {
+			"type": "custom",
+			"name": "Main Settings",
+			"description": ""
+		},
+		"seconds": {
+			"type": "int",
+			"name": "Seconds",
+			"description": "How many seconds until game resumes.",
+			"min": 1,
+			"max": 25,
+			"default": 3
+		}
+	}
+}
