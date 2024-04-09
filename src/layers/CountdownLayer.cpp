@@ -1,9 +1,9 @@
 #include "CountdownLayer.h"
 #include <Geode/modify/PauseLayer.hpp>
 
-CountdownLayer* CountdownLayer::create(PauseLayer* pause_layer) {
+CountdownLayer* CountdownLayer::create() {
     CountdownLayer* ret = new CountdownLayer();
-    if (ret && ret->init(0, 0, pause_layer)) {
+    if (ret && ret->init(0, 0)) {
         ret->autorelease();
     } else {
         delete ret;
@@ -12,12 +12,11 @@ CountdownLayer* CountdownLayer::create(PauseLayer* pause_layer) {
     return ret;
 }
 
-bool CountdownLayer::setup(PauseLayer* pause_layer) {
+bool CountdownLayer::setup() {
     this->setZOrder(12);
     this->setID("countdown");
     this->setTag(50);
     this->m_count = Mod::get()->getSettingValue<int64_t>("seconds");
-    this->m_pauseLayer = pause_layer;
     this->m_bgSprite->setVisible(false);
     this->m_closeBtn->setVisible(false);
 
@@ -58,6 +57,6 @@ void CountdownLayer::updateLabel() {
 }
 
 void CountdownLayer::exitLayer() {
-    this->m_pauseLayer->onResume(this);
+    PlayLayer::get()->resume();
     this->onClose(nullptr);
 }
