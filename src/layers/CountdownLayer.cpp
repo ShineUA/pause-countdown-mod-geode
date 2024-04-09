@@ -13,9 +13,8 @@ CountdownLayer* CountdownLayer::create() {
 }
 
 bool CountdownLayer::setup() {
+    this->setID("countdown-layer"_spr);
     this->setZOrder(12);
-    this->setID("countdown");
-    this->setTag(50);
     this->m_count = Mod::get()->getSettingValue<int64_t>("seconds");
     this->m_bgSprite->setVisible(false);
     this->m_closeBtn->setVisible(false);

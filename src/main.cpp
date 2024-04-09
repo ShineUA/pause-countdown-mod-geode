@@ -11,7 +11,7 @@ $on_mod(Loaded) {
 #include <Geode/modify/PauseLayer.hpp>
 class $modify(PauseLayer) {
 	void onResume(CCObject* sender) {
-		CCScene::get()->addChild(CountdownLayer::create());
 		this->exitLayer();
+		CCScene::get()->addChild(CountdownLayer::create());
 	}
 };

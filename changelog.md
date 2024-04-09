@@ -1,3 +1,5 @@
+# v1.1.2
+_ Fixed compatibility with Globed.
 # v1.1.1
 - Fixed more BetterPause incompats. Now this mod is completely compatible with BetterPause!
 - Removed maximum for countdown length.
