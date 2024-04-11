@@ -30,7 +30,7 @@ class $modify(PauseLayer) {
 	}	
 };
 
-#ifndef GEODE_WINDOWS
+#ifndef GEODE_IS_WINDOWS
 
 #include <Geode/modify/CCKeyboardDispatcher.hpp>
 class $modify(CCKeyboardDispatcher) {
@@ -39,6 +39,7 @@ class $modify(CCKeyboardDispatcher) {
 	}
 
 	bool dispatchKeyboardMSG(enumKeyCodes key, bool down, bool p2) {
+		log::info("Geode windows");
 		if(isResume) {
 			return false;
 		}
