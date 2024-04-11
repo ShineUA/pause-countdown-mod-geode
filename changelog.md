@@ -1,5 +1,8 @@
+# v1.1.3
+- Fixed compatibility with GDMO and Custom Keybinds.
+- Fixed small bug on Android.
 # v1.1.2
-_ Fixed compatibility with Globed.
+- Fixed compatibility with Globed.
 # v1.1.1
 - Fixed more BetterPause incompats. Now this mod is completely compatible with BetterPause!
 - Removed maximum for countdown length.
