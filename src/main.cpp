@@ -39,7 +39,6 @@ class $modify(CCKeyboardDispatcher) {
 	}
 
 	bool dispatchKeyboardMSG(enumKeyCodes key, bool down, bool p2) {
-		log::info("Geode windows");
 		if(isResume) {
 			return false;
 		}
