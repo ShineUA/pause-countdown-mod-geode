@@ -31,7 +31,7 @@ bool CountdownLayer::setup(PauseLayer* pLayer) {
         CCFadeIn::create(0.2),
         nullptr
     ));
-#ifndef GEODE_IS_MACOS
+#ifdef GEODE_IS_MACOS
     this->m_label->runAction(CCRepeatForever::create(CCSequence::create(
         CCScaleTo::create(1, 1.625f),
         CCCallFunc::create(this, callfunc_selector(CountdownLayer::updateLabel)),
