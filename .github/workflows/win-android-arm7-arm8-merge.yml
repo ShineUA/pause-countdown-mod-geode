@@ -37,7 +37,6 @@ jobs:
         with:
           bindings: ShineUA/my-bindings
           combine: true
-          export-pdb: true
           build-config: RelWithDebInfo
           target: ${{ matrix.config.target }}
 
