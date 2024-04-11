@@ -30,7 +30,7 @@ class $modify(PauseLayer) {
 	}	
 };
 
-#ifdef GEODE_WINDOWS
+#ifndef GEODE_WINDOWS
 
 #include <Geode/modify/CCKeyboardDispatcher.hpp>
 class $modify(CCKeyboardDispatcher) {
