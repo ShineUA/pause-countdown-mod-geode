@@ -24,6 +24,11 @@ class $modify(PauseLayer) {
 	}
 
 	void keyDown(cocos2d::enumKeyCodes p0) {
+		if(!isResume && p0 == enumKeyCodes::KEY_Space) {
+			this->onResume(nullptr);
+			return;
+		}
+		
 		if(!isResume) {
 			keyDown(p0);
 		}
