@@ -24,11 +24,12 @@ class $modify(PauseLayer) {
 	}
 
 	void keyDown(cocos2d::enumKeyCodes p0) {
+#ifdef GEODE_IS_MACOS
 		if(!isResume && p0 == enumKeyCodes::KEY_Space) {
 			this->onResume(nullptr);
 			return;
 		}
-		
+#endif
 		if(!isResume) {
 			keyDown(p0);
 		}
