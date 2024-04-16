@@ -1,11 +1,11 @@
 {
-	"geode": "2.0.0-beta.23",
+	"geode": "2.0.0-beta.24",
 	"gd": {
 		"win": "2.204",
 		"android": "2.205",
 		"mac": "2.200"
 	},
-	"version": "v1.1.3",
+	"version": "v1.1.4",
 	"id": "shineua.pause_countdown",
 	"name": "Pause Countdown",
 	"developer": "ShineUA",

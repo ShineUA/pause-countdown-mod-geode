@@ -1,3 +1,5 @@
+# v1.1.4
+- Updated to Geode v2.0.0-beta.24
 # v1.1.3
 - Fixed compatibility with GDMO and Custom Keybinds.
 - Fixed small bug on Android.
